@@ -21,3 +21,6 @@ for i in range(4):
         print("Guess lower!")
     elif guess < aRandomNumber:
         print("Guess higher!")
+    else:
+        print("█▀▀ █▀█ █▀█ █▀█ █▀▀ █▀▀ ▀█▀ █   █▄█ █▀█ █░█ ▀ █▀█ █▀▀   ▄▀█ █░█░█ █▀▀ █▀ █▀█ █▀▄▀█ █▀▀ █")
+        print("█▄▄ █▄█ █▀▄ █▀▄ ██▄ █▄▄ ░█░ ▄   ░█░ █▄█ █▄█ ░ █▀▄ ██▄   █▀█ ▀▄▀▄▀ ██▄ ▄█ █▄█ █░▀░█ ██▄ ▄")

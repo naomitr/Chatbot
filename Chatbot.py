@@ -21,11 +21,11 @@ def intro():
                 if answer == answer:
                     print("Cool name!")
             else:
-                print("Okay, but I'll tell you anyways!")
+                print("I'll tell you anyways!")
                 print("My name is EveBot-3000!")
                 answer = input("What's your name?")
                 if answer == answer:
-                    print("Cool name!")
+                    print("That's a cool name I guess...")
 
 def choices():
     for i in range (1):
@@ -37,8 +37,8 @@ def choices():
         print("| |____| | | | (_) | | (_|  __/\__ \ | |  | |  __/ | | | |_| |")
         print(" \_____|_| |_|\___/|_|\___\___||___/ |_|  |_|\___|_| |_|\__,_|")
         print("Would you like to know about what I can do?")
-        answer = input("Just type 'Yes'!")
-        if answer == "yes":
+        answer = input("Just type 'Yes'!").lower()
+        if (answer == "yes") or (answer == "y"):
             print("I can show you art!")
             print("Type 'Art' to see art!")
             print("I can tell you poems!")
@@ -49,12 +49,12 @@ def choices():
     # input from the user about which path to take
     choice = input()
     choice = choice.lower()
-    if choice == "art":
+    if (choice == "art") or (choice == "a"):
         art()
-    elif choice == "game":
+    elif (choice == "game") or (choice == "g"):
         game()
         # game()
-    elif choice == "poem":
+    elif (choice == "poem") or (choice == "p"):
         poem()
         # poem()
 
